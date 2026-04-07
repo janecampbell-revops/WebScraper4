@@ -12,6 +12,7 @@ dev = ["pytest"]
 
 [project.scripts]
 website-discovery = "site_discovery.cli:main"
+simple-web-scraper = "site_discovery.simple_scraper:main"
 
 [build-system]
 requires = ["setuptools>=68", "wheel"]
