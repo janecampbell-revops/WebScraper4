@@ -1,0 +1,22 @@
+[project]
+name = "website-event-discovery"
+version = "0.1.0"
+description = "CLI scraper that checks websites and detects conversion events, ecommerce engines, and affiliate programs."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Cursor Agent" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+website-discovery = "site_discovery.cli:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["site_discovery*"]
